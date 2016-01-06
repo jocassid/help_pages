@@ -140,11 +140,13 @@ You're all set up, and now you can use your virtualenv ![:\)](/smile.png)
 ###Extra packages
 
 
-Don't forget, the virtualenv has its own set of installed packages -- so if you want to use something you'll need to `pip install` it. A common example for Django is the Python MySQL library, for which you'll need to install `mysql-python`: 
+Don't forget, the virtualenv has its own set of installed packages -- so if you want to use something you'll need to `pip install` it. A common example for Django is the Python 2 MySQL library, for which you'll need to install `mysql-python`: 
 
     (django18)15:12 ~/mysite $ pip install mysql-python    
 
+The current version of mysql-python (1.5.2) does not support Python 3.  Python 3 users may want to consider alternatives such as mysqlclient
 
+    (django18)15:12 ~/mysite $ pip install mysqlclient
 
 ###Static files
 
